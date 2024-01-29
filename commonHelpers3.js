@@ -3,4 +3,4 @@ import{S as d}from"./assets/vendor-c9def49e.js";(function(){const o=document.cre
                     <img class="gallery-image" src="${t}"  alt="${i}"/>
                 </a>
             </li>`).join("");new d(".gallery a",{sourceAttr:"data-source",captionsData:"alt",captionDelay:250});const p=document.querySelector(".feedback-form"),l=document.querySelector(".feedback-form input"),m=document.querySelector(".feedback-form textarea"),c=localStorage.getItem("feedback-form-state"),s={email:"",message:""};if(c){const t=JSON.parse(c);l.value=t.email,m.value=t.message}const h=t=>{t.preventDefault();const o=t.target.elements.email.value.trim(),i=t.target.elements.message.value.trim();o&&i?(localStorage.removeItem("feedback-form-state"),s.email=o,s.message=i,t.target.reset(),console.log(s)):alert("All form fields must be filled in")},f=()=>{const t=l.value.trim(),o=m.value.trim();t||o?localStorage.setItem("feedback-form-state",JSON.stringify({email:t,message:o})):localStorage.removeItem("feedback-form-state")};p.addEventListener("submit",h);p.addEventListener("input",f);
-//# sourceMappingURL=commonHelpers.js.map
+//# sourceMappingURL=commonHelpers3.js.map
