@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 100px;
+  list-style-type: none;
 }
 
 .gallery-item {
